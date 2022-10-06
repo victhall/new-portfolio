@@ -35,7 +35,7 @@ const project_data = [{
 }
 ]
 
-export default function ProjectList(props) {
+export default function ProjectList() {
 
   return (
     <div className={classes['project-list']}>

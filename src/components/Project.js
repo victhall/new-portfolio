@@ -38,7 +38,7 @@ export default function Project(props) {
           </div>
         </div>
       </div>
-      {isModalOpen && <ProjectModal>{projectDetails}</ProjectModal>}
+      {isModalOpen && <ProjectModal onCloseModal={closeModal}>{projectDetails}</ProjectModal>}
     </>
   )
 }
