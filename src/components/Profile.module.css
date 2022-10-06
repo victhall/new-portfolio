@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;300;400;600&display=swap');
+
+.main__text h1 {
+  line-height: 1.2;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 400;
+  font-size: clamp(20px, calc(14.40px + 2.00vw), 40px);
+  -webkit-font-smoothing: antialiased;
+  color: #1f1f1f;
+}
+
+.profile__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 255px;
+}
