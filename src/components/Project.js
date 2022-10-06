@@ -12,7 +12,18 @@ export default function Project(props) {
   function closeModal() {
     setIsModalOpen(false)
   }
-  
+
+  const projectDetails = <>
+    <img src={props.image} />
+    <h1>{props.title}</h1>
+    <p>{props.shortDesc}</p>
+    <button onClick={closeModal}>Close</button>
+    <h2>Tech</h2>
+    <p>{props.tech}</p>
+    <img src={props.image} />
+    <p>{props.longDesc}</p>
+  </>
+
   return (
     <>
       <div className={classes['project-outer__container']}>
@@ -27,15 +38,7 @@ export default function Project(props) {
           </div>
         </div>
       </div>
-
-      {isModalOpen && <ProjectModal
-      onCloseModal={closeModal} 
-      title={props.title}
-      image={props.image}
-      shortDesc={props.shortDesc}
-      longDesc={props.longDesc}
-      tech={props.tech}
-      />}
+      {isModalOpen && <ProjectModal>{projectDetails}</ProjectModal>}
     </>
   )
 }
