@@ -1,101 +1,40 @@
-/* .project-details__container {
-height: 96vh;
-overflow: auto;
-position: absolute;
-top: 4vh;
-width: 60%;
-width: 100%;
-background-color: white;
-padding: 1rem;
-border-top-left-radius: 14px;
-border-top-right-radius: 14px;
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-z-index: 30;
-animation: slideIn .2s backwards;
-}
-
-@keyframes slideIn {
-  0% {
-    transform: translateY(800px);
-    animation-timing-function: ease-out;
-  }
-} */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap');
 
 .backdrop {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100vh;
-  /* z-index: 20; */
-  /* background-color: #0000000A; */
+  z-index: 20;
+  background-color: #f5f5f5;
 }
 
-.modal {
-  /* height: 30vh;
-	overflow: auto;
-  position: fixed;
-  margin-left: 1.5%;
-  top: 8vh;
-  width: 90%;
-  background-color: white;
-  padding: 1rem;
-  border-radius: 14px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+.content {
   z-index: 30;
-  animation: slide-down 300ms ease-out forwards;
-  margin-left: 1.5%; */
-
-/* height: 96vh;
-overflow: auto;
-position: absolute;
-top: 4vh;
-width: 100%;
-/* width: 50%;
-width: 100%; */
-/* background-color: white;
-padding: 1rem;
-border-top-left-radius: 14px;
-border-top-right-radius: 14px;
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-z-index: 30;
-animation: slideIn .2s backwards; */ 
-
-/* height: 30rem;
-overflow: auto;
-position: fixed; */
-/* margin-right: 500px; */
-/* top: 8vh;
-width: 90%;
-background-color: white;
-padding: 1rem;
-border-radius: 14px;
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-z-index: 30;
-animation: slide-down 300ms ease-out forwards; */
+  position: fixed;
+  top: 4vh;
+  background-color: white;
+  padding: 2rem 3rem;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  width: 55%;
+  border: 1px solid #d5d9d9;
+  animation: slideIn .1s forwards;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Manrope', sans-serif;
+  overflow: auto;
+  overflow-y: auto;
+  max-height: calc(100vh - 100px)
 }
-
-@media (min-width: 768px) {
-  .modal {
-    width: 40rem;
-    left: calc(50% - 20rem);
-  }
-}
-
-/* @keyframes slide-down {
-  from {
-    opacity: 0;
-    transform: translateY(-3rem);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-} */
 
 @keyframes slideIn {
   0% {
     transform: translateY(800px);
-    animation-timing-function: ease-out;
+    animation-timing-function: ease-in;
   }
-} 
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+}

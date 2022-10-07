@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap');
 
 .projects {
   display: flex;
@@ -8,15 +8,17 @@
 .project__title {
   margin: 0;
   font-family: 'Manrope', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 17px;
+  color: #1A1A1A;
 }
 
 .project-short__description {
   margin: 8px 0 0 0;
   font-family: 'Manrope', sans-serif;
-  font-weight: 300;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 13px;
+  color: #1A1A1A;
 }
 
 .projects img {
@@ -27,4 +29,93 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+button {
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #1A1A1A;
+  display: inline-block;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #f7fafa;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 15px;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 15px;
+}
+
+.title-desc h1 {
+  margin: 8px 0 5px 0;
+  font-weight: 500;
+  font-size: 26px;
+}
+
+.title-desc p {
+  margin: 0;
+  width: 70%;
+}
+
+.title-desc {
+  margin-left: 20px;
+}
+
+.app-img {
+  height: 80%;
+  width: 80%;
+  padding: 35px 20px 0 0;
+}
+
+.tech-stack {
+  margin: 0;
+  font-size: 17px;
+}
+
+.tech-title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 19px;
+  padding: 8px 0;
+}
+
+.longDesc {
+  width: 60%;
+  padding: 15px 0;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.visit-btn {
+  margin-bottom: 50px;
+  padding: 3px 40px;
+  font-size: 16px;
+  letter-spacing: .8px;
+}
+
+.details-img img {
+  width: 100px;
+  height: 100px;
+}
+
+.close-btn {
+  position: fixed;
+  right: 30px;
+  top: 30px;
 }
