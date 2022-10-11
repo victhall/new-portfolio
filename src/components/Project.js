@@ -39,7 +39,7 @@ export default function Project(props) {
       {props.tech.map((item) => {
         return <p className={classes['tech-stack']}>{item}</p>
       })}
-      <div>
+      <div className={classes['img-container']}>
       {props.image.map((item) => {
         return <img key={item.key} className={classes['app-img']} src={urlFor(item.asset._ref).url()} />
         })}

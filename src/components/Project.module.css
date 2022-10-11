@@ -83,7 +83,7 @@ button:hover {
 .app-img {
   height: 80%;
   width: 80%;
-  padding: 35px 20px 0 0;
+  margin: 35px 20px 0 0;
 }
 
 .tech-stack {
@@ -146,4 +146,14 @@ hr {
   border: none;
   height: 1px;
   background-color: #d5d9d9; 
+}
+
+.img-container {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+}
+
+.img-container img {
+  border-radius: 5px;
 }
