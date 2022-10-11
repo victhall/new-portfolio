@@ -45,6 +45,7 @@ button {
   line-height: 29px;
   padding: 0 10px 0 11px;
   text-align: center;
+  letter-spacing: .4px;
 }
 
 button:hover {
@@ -53,13 +54,14 @@ button:hover {
 }
 
 .btn {
-  padding: 15px;
+  padding-left: 13px;
 }
 
 .project-details {
   display: flex;
   flex-direction: row;
   padding-bottom: 15px;
+  border-bottom: .5px solid #d5d9d9;
 }
 
 .title-desc h1 {
@@ -71,6 +73,7 @@ button:hover {
 .title-desc p {
   margin: 0;
   width: 70%;
+  color: #1A1A1A;
 }
 
 .title-desc {
@@ -84,15 +87,29 @@ button:hover {
 }
 
 .tech-stack {
-  margin: 0;
-  font-size: 17px;
+  margin: 0 10px 0 0;
+  font-size: 16px;
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #1A1A1A;
+  display: inline-block;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 29px;
+  padding: 15px 20px;
+  text-align: center;
+  letter-spacing: .4px;
 }
 
 .tech-title {
-  margin: 0;
-  font-weight: 400;
-  font-size: 19px;
-  padding: 8px 0;
+  margin: 15px 0 0 0;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 8px 0 15px 0;
+  letter-spacing: 1px;
 }
 
 .longDesc {
@@ -106,7 +123,7 @@ button:hover {
   margin-bottom: 50px;
   padding: 3px 40px;
   font-size: 16px;
-  letter-spacing: .8px;
+  margin-right: 10px;
 }
 
 .details-img img {
@@ -118,4 +135,15 @@ button:hover {
   position: fixed;
   right: 30px;
   top: 30px;
+}
+
+.project-bottom__border {
+font-size: .5px;
+}
+
+hr {
+  margin: 30px 0 0 80px;
+  border: none;
+  height: 1px;
+  background-color: #d5d9d9; /* Modern Browsers */
 }

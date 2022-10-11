@@ -13,40 +13,39 @@ export default function Project(props) {
     setIsModalOpen(false)
   }
 
+  for (let i of props.tech) {
+
+  }
+
   const projectDetails =
-
-<div className={classes['outer-details__container']}>
-    <div className={classes['project-details']}>
-      <div className={classes['details-img']}>
-        <img src={props.icon} />
-      </div>
-
+    <div className={classes['outer-details__container']}>
+      <div className={classes['project-details']}>
+        <div className={classes['details-img']}>
+          <img src={props.icon} />
+        </div>
         <div className={classes['title-desc']}>
           <h1>{props.title}</h1>
           <p>{props.shortDesc}</p>
         </div>
-
         <div className={classes['close-btn']}>
           <button onClick={closeModal}>Close</button>
         </div>
-
       </div>
-
-      <h2 className={classes['tech-title']}>Tech Stack</h2>
-      <p className={classes['tech-stack']}>{props.tech}</p>
-
+      <h2 className={classes['tech-title']}>TECH</h2>
+      {props.tech.map((item) => {
+        return <p className={classes['tech-stack']}>{item}</p>
+      })}
       <div>
         <img className={classes['app-img']} src={props.image} />
       </div>
-
       <div className={classes.longDesc}>
         <p>{props.longDesc}</p>
       </div>
-
-<button className={classes['visit-btn']}>Visit</button>
+      <a href=''><button className={classes['visit-btn']}>Visit Web</button></a>
+      <a href=''><button className={classes['visit-btn']}>View Source</button></a>
     </div>
 
-  
+
 
   return (
     <>
@@ -63,6 +62,7 @@ export default function Project(props) {
             </div>
           </div>
         </div>
+        {(props.index === 0 || props.index === 1) && <hr size=".5" className={classes['project-bottom__border']} />}
       </div>
       {isModalOpen && <ProjectModal onCloseModal={closeModal}>{projectDetails}</ProjectModal>}
     </>

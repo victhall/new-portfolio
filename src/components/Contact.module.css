@@ -6,7 +6,6 @@ footer {
   font-family: 'Manrope', sans-serif;
   color: #1A1A1A;
   font-weight: 500;
-  margin-top: 10px;
 }
 
 .contact__links a {
@@ -25,6 +24,7 @@ font-size: 13px;
 line-height: 29px;
 padding: 0 10px 0 11px;
 text-align: center;
+letter-spacing: .4px;
 }
 
 .contact__links a:hover {

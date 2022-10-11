@@ -4,7 +4,7 @@
   line-height: 1.3;
   font-family: 'Manrope', sans-serif;
   font-weight: 500;
-  font-size: clamp(24px, calc(14.40px + 2.00vw), 34px);
+  font-size: clamp(24px, calc(14.40px + 2.00vw), 31px);
   -webkit-font-smoothing: antialiased;
   color: #1A1A1A;
   margin: 0;

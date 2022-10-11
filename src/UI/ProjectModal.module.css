@@ -13,12 +13,12 @@
   position: fixed;
   top: 4vh;
   background-color: white;
-  padding: 2rem 3rem;
+  padding: 2.5rem 3rem;
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
   width: 55%;
   border: 1px solid #d5d9d9;
-  animation: slideIn .1s forwards;
+  animation: slideIn .2s forwards;
   display: flex;
   flex-direction: row;
   font-family: 'Manrope', sans-serif;
@@ -30,7 +30,7 @@
 @keyframes slideIn {
   0% {
     transform: translateY(800px);
-    animation-timing-function: ease-in;
+    animation-timing-function: ease-in-out;
   }
 }
 
