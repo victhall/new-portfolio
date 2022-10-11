@@ -53,6 +53,11 @@ export default createSchema({
           name: 'github',
           title: 'Github',
           type: 'string' 
+        },
+        {
+          name: 'icon',
+          title: 'icon',
+          type: 'image'
         }
       ]
     }

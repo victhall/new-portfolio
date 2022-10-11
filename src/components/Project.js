@@ -12,7 +12,6 @@ export default function Project(props) {
     return builder.image(source)
   }
 
-
   function openModal() {
     setIsModalOpen(true);
   }
@@ -25,7 +24,7 @@ export default function Project(props) {
     <div className={classes['outer-details__container']}>
       <div className={classes['project-details']}>
         <div className={classes['details-img']}>
-          <img src={props.icon} />
+          <img className={classes['project-icon']} src={props.icon} />
         </div>
         <div className={classes['title-desc']}>
           <h1>{props.title}</h1>
@@ -47,15 +46,15 @@ export default function Project(props) {
       <div className={classes.longDesc}>
         <p>{props.longDesc}</p>
       </div>
-      <a href=''><button className={classes['visit-btn']}>Visit Web</button></a>
-      <a href=''><button className={classes['visit-btn']}>View Source</button></a>
+      <a href={props.url} target="_blank"><button className={classes['visit-btn']}>Visit Web</button></a>
+      <a href={props.github} target="_blank"><button className={classes['visit-btn']}>View Source</button></a>
     </div>
 
   return (
     <>
       <div className={classes['project-outer__container']}>
         <div className={classes.projects}>
-          <img src={props.icon} />
+          <img className={classes['project-icon']} src={props.icon} />
           <div className={classes['project-inner__container']}>
             <div className={classes['project__details']}>
               <h2 className={classes['project__title']}>{props.title}</h2>
