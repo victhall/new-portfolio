@@ -1,9 +1,17 @@
 import classes from './Project.module.css';
-import ProjectModal from '../UI/ProjectModal'
+import ProjectModal from '../UI/ProjectModal';
 import { useState } from 'react';
+import imageUrlBuilder from '@sanity/image-url';
+import sanityClient from '../client'
 
 export default function Project(props) {
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const builder = imageUrlBuilder(sanityClient);
+  function urlFor(source) {
+    return builder.image(source)
+  }
+
 
   function openModal() {
     setIsModalOpen(true);
@@ -11,10 +19,6 @@ export default function Project(props) {
 
   function closeModal() {
     setIsModalOpen(false)
-  }
-
-  for (let i of props.tech) {
-
   }
 
   const projectDetails =
@@ -36,7 +40,9 @@ export default function Project(props) {
         return <p className={classes['tech-stack']}>{item}</p>
       })}
       <div>
-        <img className={classes['app-img']} src={props.image} />
+      {props.image.map((item) => {
+        return <img key={item.key} className={classes['app-img']} src={urlFor(item.asset._ref).url()} />
+        })}
       </div>
       <div className={classes.longDesc}>
         <p>{props.longDesc}</p>
@@ -44,8 +50,6 @@ export default function Project(props) {
       <a href=''><button className={classes['visit-btn']}>Visit Web</button></a>
       <a href=''><button className={classes['visit-btn']}>View Source</button></a>
     </div>
-
-
 
   return (
     <>

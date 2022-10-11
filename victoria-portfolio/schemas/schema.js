@@ -19,28 +19,40 @@ export default createSchema({
       fields: [
         {
           name: 'title',
-          type: 'string',
-          title: 'Title'
+          title: 'Title',
+          type: 'string'
         },
         {
           name: 'image',
-          type: 'image',
-          title: 'Image' 
+          title: 'Image',
+          type: 'array',
+          of: [{type: 'image'}]
         },
         {
           name: 'shortDesc',
           type: 'string',
-          title: 'Short Description' 
+          title: 'Short Description'
         },
         {
           name: 'longDesc',
           type: 'string',
-          title: 'Long Description' 
+          title: 'Long Description'
         },
         {
           name: 'tech',
-          type: 'string',
-          title: 'Tech' 
+          title: 'Tech',
+          type: 'array',
+          of: [{type: 'string'}]
+        },
+        {
+          name: 'url',
+          title: 'URL',
+          type: 'string'
+        },
+        {
+          name: 'github',
+          title: 'Github',
+          type: 'string' 
         }
       ]
     }
