@@ -138,14 +138,15 @@ button:hover {
 }
 
 .project-bottom__border {
-  font-size: .5px;
-}
-
-hr {
-  margin: 10px 0 0 115px;
+  margin: 30px 0 0 115px;
   border: none;
   height: 1px;
   background-color: #d5d9d9;
+  font-size: .5px;
+}
+
+.project-bottom__border3 {
+  display: none;
 }
 
 .img-container {
@@ -176,8 +177,20 @@ hr {
     width: 70px;
   }
 
-  hr {
-    margin: 10px 0 0 84px;
+  .project-bottom__border {
+    margin: 30px 0 0 85px;
+  }
+
+  .project-bottom__border3 {
+    margin: 30px 0 0 85px;
+    border: none;
+    height: 1px;
+    background-color: #d5d9d9;
+    font-size: .5px;
+  }
+  
+  .project-bottom__border3 {
+    display: block;
   }
 
   .title-desc {
@@ -195,6 +208,7 @@ hr {
   .tech-stack {
     padding: 7.5px 10px;
   }
+  
   .app-img {
     height: 100%;
     width: 100%;

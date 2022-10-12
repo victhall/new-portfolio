@@ -67,7 +67,8 @@ export default function Project(props) {
             </div>
           </div>
         </div>
-        {(props.index === 0 || props.index === 1 || props.index === 2 || props.index === 3) && <hr  size=".5" className={classes['project-bottom__border']} />}
+        {(props.index === 0 || props.index === 1) && <hr  size=".5" className={classes['project-bottom__border']} />}
+        {(props.index === 2 ) && <hr  size=".5" className={classes['project-bottom__border3']} />}
       </div>
       {isModalOpen && <ProjectModal onCloseModal={closeModal}>{projectDetails}</ProjectModal>}
     </>
