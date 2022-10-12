@@ -35,9 +35,11 @@ export default function Project(props) {
         </div>
       </div>
       <h2 className={classes['tech-title']}>TECH</h2>
+      <div className={classes['tech-container']}>
       {props.tech.map((item) => {
         return <p className={classes['tech-stack']}>{item}</p>
       })}
+      </div>
       <div className={classes['img-container']}>
       {props.image.map((item) => {
         return <img key={item.key} className={classes['app-img']} src={urlFor(item.asset._ref).url()} />
@@ -65,7 +67,7 @@ export default function Project(props) {
             </div>
           </div>
         </div>
-        {(props.index === 0 || props.index === 1) && <hr size=".5" className={classes['project-bottom__border']} />}
+        {(props.index === 0 || props.index === 1 || props.index === 2 || props.index === 3) && <hr  size=".5" className={classes['project-bottom__border']} />}
       </div>
       {isModalOpen && <ProjectModal onCloseModal={closeModal}>{projectDetails}</ProjectModal>}
     </>

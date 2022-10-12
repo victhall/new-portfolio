@@ -5,5 +5,14 @@
     grid-column-gap: 30px;
     margin-top: 35px;
     width: 100%;
- }
+  }
 
+  @media (max-width: 988px) {
+    .project-list {
+      display: flex;
+      flex-direction: column;
+      padding-top: 100px;
+      padding-bottom: 15px;
+    }
+  }
+  

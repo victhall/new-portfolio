@@ -65,7 +65,7 @@ button:hover {
 }
 
 .title-desc h1 {
-  margin: 8px 0 5px 0;
+  margin: 2px 0 5px 0;
   font-weight: 500;
   font-size: 26px;
 }
@@ -138,14 +138,14 @@ button:hover {
 }
 
 .project-bottom__border {
-font-size: .5px;
+  font-size: .5px;
 }
 
 hr {
-  margin: 30px 0 0 115px;
+  margin: 15px 0 0 115px;
   border: none;
   height: 1px;
-  background-color: #d5d9d9; 
+  background-color: #d5d9d9;
 }
 
 .img-container {
@@ -163,4 +163,40 @@ hr {
   width: 100px;
   border-radius: 5px;
   margin-right: 15px;
+}
+
+@media (max-width: 988px) {
+  .longDesc {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .project-icon {
+    height: 70px;
+    width: 70px;
+  }
+
+  hr {
+    margin: 30px 0 0 84px;
+  }
+
+  .title-desc {
+    margin-left: 0px;
+  }
+
+  .title-desc p {
+    width: 90%;
+  }
+
+  .details-img img {
+    width: 70px;
+    height: 70px;
+  }
+  .tech-stack {
+    padding: 7.5px 10px;
+  }
+  .app-img {
+    height: 100%;
+    width: 100%;
+  }
 }
