@@ -24,7 +24,7 @@ export default function Project(props) {
     <div className={classes['outer-details__container']}>
       <div className={classes['project-details']}>
         <div className={classes['details-img']}>
-          <img className={classes['project-icon']} src={props.icon} alt='Project icon'/>
+          <img className={classes['project-icon']} src={props.icon} alt='Project Home UI'/>
         </div>
         <div className={classes['title-desc']}>
           <h1>{props.title}</h1>
@@ -42,7 +42,7 @@ export default function Project(props) {
       </div>
       <div className={classes['img-container']}>
       {props.image.map((item) => {
-        return <img key={item.key} className={classes['app-img']} src={urlFor(item.asset._ref).url()} alt='Project image'/>
+        return <img key={item.key} className={classes['app-img']} src={urlFor(item.asset._ref).url()} alt='Project screenshots of home UI'/>
         })}
       </div>
       <div className={classes.longDesc}>
@@ -56,7 +56,7 @@ export default function Project(props) {
     <>
       <div className={classes['project-outer__container']}>
         <div className={classes.projects}>
-          <img className={classes['project-icon']} src={props.icon} alt='Project icon'/>
+          <img className={classes['project-icon']} src={props.icon} alt='Project UI screenshot'/>
           <div className={classes['project-inner__container']}>
             <div className={classes['project__details']}>
               <h2 className={classes['project__title']}>{props.title}</h2>

@@ -1,7 +1,6 @@
 import classes from './Contact.module.css'
 
-export default function NavBar() {
-
+export default function Contact() {
   return (
     <footer>
       <div className={classes['contact__links']}>
