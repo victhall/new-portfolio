@@ -48,10 +48,8 @@ export default function Project(props) {
       <div className={classes.longDesc}>
         <p>{props.longDesc}</p>
       </div>
-      <div className={classes['project-btns']}>
       <a href={props.url} target="_blank" rel='noreferrer'><button className={classes['visit-btn']}>Visit Web</button></a>
       <a href={props.github} target="_blank" rel='noreferrer'><button className={classes['visit-btn']}>View Source</button></a>
-      </div>
     </div>
 
   return (

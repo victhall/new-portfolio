@@ -213,9 +213,8 @@ button:hover {
     height: 100%;
     width: 100%;
   }
-  .project-btns {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  .visit-btn {
+    font-size: 14px;
+    margin-bottom: 100px;
   }
 }
