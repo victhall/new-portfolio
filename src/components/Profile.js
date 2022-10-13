@@ -9,8 +9,8 @@ export default function Profile() {
         <h1>Victoria Hall is a Frontend Developer based in Toronto, Canada
           with a passion for thoughtful UI and engaging user experiences. Her work focuses on creating meaningful
           digital utilities for the material world.</h1>
+          <Contact />
       </main>
-      <Contact />
       <ProjectList />
     </div>
   )
