@@ -87,7 +87,7 @@ button:hover {
 }
 
 .tech-stack {
-  margin: 0 5px 0 0;
+  margin: 0 10px 0 0;
   font-size: 16px;
   background-color: #fff;
   border: 1px solid #d5d9d9;
@@ -207,6 +207,7 @@ button:hover {
   }
   .tech-stack {
     padding: 7.5px 10px;
+    margin: 0 5px 0 0;
   }
   
   .app-img {
