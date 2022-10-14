@@ -215,7 +215,7 @@ button:hover {
   }
   .tech-stack {
     padding: 7.5px 10px;
-    margin: 0 5px 0 0;
+    margin: 0 5px 5px 0;
   }
   
   .app-img {
@@ -224,8 +224,5 @@ button:hover {
   }
   .visit-btn {
     font-size: 14px;
-  }
-  .tech-container {
-    padding-bottom: 5px;
   }
 }
