@@ -224,6 +224,8 @@ button:hover {
   }
   .visit-btn {
     font-size: 14px;
-
+  }
+  .tech-container {
+    padding-bottom: 5px;
   }
 }
