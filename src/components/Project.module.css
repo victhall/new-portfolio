@@ -120,8 +120,7 @@ button:hover {
 }
 
 .visit-btn {
-  margin-bottom: 80px;
-  padding: 3px 40px;
+  padding: 3px 30px;
   font-size: 16px;
   margin-right: 10px;
 }
@@ -164,6 +163,10 @@ button:hover {
   width: 100px;
   border-radius: 5px;
   margin-right: 15px;
+}
+
+.detail-btns {
+  padding-bottom: 100px;
 }
 
 @media (max-width: 988px) {
@@ -221,6 +224,6 @@ button:hover {
   }
   .visit-btn {
     font-size: 14px;
-    margin-bottom: 100px;
+
   }
 }
