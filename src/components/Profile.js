@@ -6,9 +6,7 @@ export default function Profile() {
   return (
     <div className={classes['profile__container']}>
       <main className={classes['main__text']}>
-        <h1>Victoria Hall is a Freelance Frontend Developer based in Toronto, Canada
-          with a passion for thoughtful UI and engaging user experiences. Her work focuses on creating meaningful
-          digital utilities for the material world.</h1>
+        <h1>Hey! I'm Victoria, a Freelance Frontend Developer based in Toronto, Canada. I'm passionate about crafting thoughtful UI and creating engaging user experiences that resonate with people. My main focus is to develop meaningful digital tools that help make our everyday lives better in the physical world.</h1>
           <Contact />
       </main>
       <ProjectList />
